@@ -2,6 +2,9 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
+
+DATA_PATH = "data/movies_genres_summary.csv"
+
 # Show the page title and description.
 st.set_page_config(page_title="Movies dataset", page_icon="🎬")
 st.title("🎬 Movies dataset")
@@ -18,7 +21,7 @@ st.write(
 # reruns (e.g. if the user interacts with the widgets).
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/movies_genres_summary.csv")
+    df = pd.read_csv(DATA_PATH)
     return df
 
 
