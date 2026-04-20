@@ -69,7 +69,7 @@ chart = (
     .encode(
         x=alt.X("year:N", title="Year"),
         y=alt.Y("gross:Q", title="Gross earnings ($)"),
-        color="genre:N",
+        color=alt.Color("genre:N", legend=alt.Legend(title="Genre")), 
         tooltip=[
             alt.Tooltip("year:N", title="Year"),
             alt.Tooltip("genre:N", title="Genre"),
