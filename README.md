@@ -18,6 +18,3 @@ python 02_modelling.py           # train & evaluate models
 jupyter notebook movies_analysis.ipynb  # full narrative analysis
 streamlit run MDapp.py           # interactive dashboard
 ```
-
-## Data sources
-[IMDB Movie Metadata](https://www.kaggle.com/datasets/carolzhangdc/imdb-5000-movie-dataset) · [TMDB 5000 Movies](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
